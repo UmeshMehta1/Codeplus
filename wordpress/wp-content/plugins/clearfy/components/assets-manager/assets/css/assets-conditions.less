@@ -1,0 +1,220 @@
+/* ==*/
+#WBCR-AM {
+  @prefix: ~".wam-cleditor";
+
+  .wam-cleditor {
+    box-sizing: border-box;
+
+    input {
+      float: none;
+      position: relative;
+      top: 0;
+      padding: 4px;
+    }
+
+    &@{prefix}__disable-plugin-mode {
+      @{prefix}__param-select {
+        option[value="location-taxonomy"],
+        option[value="location-post-type"],
+        option[value="location-some-page"] {
+          display: none;
+        }
+      }
+    }
+
+    @{prefix}__text {
+      width: 300px;
+    }
+
+    @{prefix}__box {
+      padding: 25px 15px 15px 15px;
+      border-left: 1px solid #ddd;
+      background-color: #f9f9f9;
+    }
+
+    @{prefix}__when-empty {
+      display: none;
+    }
+
+    @{prefix}__empty @{prefix}__when-empty {
+      display: block;
+    }
+
+    @{prefix}__head {
+      display: flex;
+      overflow: auto;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      padding: 10px 15px;
+
+      @{prefix}__head-left, @{prefix}__head-right {
+        display: inline-block;
+      }
+
+      @{prefix}__head-left {
+        text-align: left;
+        flex: 2 0 0;
+      }
+
+      @{prefix}__head-right {
+        text-align: right;
+        flex: 1 0 0;
+      }
+
+      @{prefix}__first-group-title {
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 2.3;
+      }
+    }
+
+    @{prefix}__wrap @{prefix}__groups {
+      padding-left: 20px;
+      border-left: 1px solid #ddd;
+    }
+
+    @{prefix}__groups {
+
+      @{prefix}__point {
+        background-color: #fff;
+        border: 1px solid #0073aa;
+        border-radius: 100%;
+        width: 11px;
+        height: 11px;
+        display: block;
+        position: absolute;
+        margin-left: -26px;
+        margin-top: 19px;
+      }
+
+      @{prefix}__point:after {
+        position: absolute;
+        content: " ";
+        display: block;
+        width: 15px;
+        border-top: 1px solid #ddd;
+        margin-left: 10px;
+        margin-top: 4px;
+      }
+    }
+
+    @{prefix}__group {
+      @{prefix}__group-type {
+        display: none;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: 2.3;
+        font-size: 12px;
+        font-weight: bold;
+        font-style: normal;
+        color: #222;
+        background: #f3f3f3;
+        text-align: center;
+        border-radius: 3px;
+        padding: 5px 10px 5px 10px;
+      }
+
+      /*@{prefix}__group + @{prefix}__group {
+        margin-top: 20px;
+       }*/
+    }
+
+    @{prefix}__empty @{prefix}__conditions {
+      display: none;
+    }
+
+    /* Conditions */
+
+    @{prefix}__condition {
+      position: relative;
+
+      @{prefix}__hint,
+      @{prefix}__hint-content {
+        display: none;
+      }
+
+      @{prefix}__hint {
+        position: relative;
+        display: inline-block;
+        padding: 0 6px 0 3px;
+      }
+
+      @{prefix}__hint-icon {
+        background: url('../img/help.png') no-repeat 0 0 transparent;
+        position: relative;
+        height: 14px;
+        width: 13px;
+        display: inline-block;
+        cursor: help;
+        vertical-align: middle;
+        top: -1px;
+        opacity: 0.55;
+      }
+
+      @{prefix}__hint:hover @{prefix}__hint-content {
+        display: block;
+        position: absolute;
+        width: 280px;
+        background-color: rgba(0, 0, 0, 0.8);
+        white-space: normal;
+        padding: 10px 12px 12px 12px;
+        font-weight: normal;
+        line-height: 150%;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 13px;
+        z-index: 999;
+      }
+
+      @{prefix}__hint @{prefix}__hint-content,
+      @{prefix}__hint @{prefix}__hint-content a {
+        color: #fff;
+      }
+
+      @{prefix}__operator-and {
+        display: block;
+        color: rgba(0, 0, 0, 0.7);
+        font-weight: bold;
+        border-top: 1px solid #ddd;
+        margin: 18px 0;
+        position: relative;
+      }
+
+      @{prefix}__operator-and {
+        span {
+          position: absolute;
+          top: -10px;
+          background-color: #f9f9f9;
+          padding-right: 7px;
+          text-transform: uppercase;
+        }
+      }
+
+      &:first-child @{prefix}__operator-and {
+        display: none;
+      }
+
+      & > span {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      @{prefix}__condition-actions {
+        position: absolute;
+        right: 0;
+      }
+    }
+
+
+    /* Buttons */
+
+    @{prefix}__buttons-group {
+      margin-top: 20px;
+    }
+  }
+}
+
+

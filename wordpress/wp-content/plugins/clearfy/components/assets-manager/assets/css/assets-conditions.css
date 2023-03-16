@@ -1,0 +1,175 @@
+/* ==*/
+#WBCR-AM .wam-cleditor {
+  box-sizing: border-box;
+  /* Conditions */
+  /* Buttons */
+}
+#WBCR-AM .wam-cleditor input {
+  float: none;
+  position: relative;
+  top: 0;
+  padding: 4px;
+}
+#WBCR-AM .wam-cleditor.wam-cleditor__disable-plugin-mode .wam-cleditor__param-select option[value="location-taxonomy"],
+#WBCR-AM .wam-cleditor.wam-cleditor__disable-plugin-mode .wam-cleditor__param-select option[value="location-post-type"],
+#WBCR-AM .wam-cleditor.wam-cleditor__disable-plugin-mode .wam-cleditor__param-select option[value="location-some-page"] {
+  display: none;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__text {
+  width: 300px;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__box {
+  padding: 25px 15px 15px 15px;
+  border-left: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__when-empty {
+  display: none;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__empty .wam-cleditor__when-empty {
+  display: block;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__head {
+  display: flex;
+  overflow: auto;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  padding: 10px 15px;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__head .wam-cleditor__head-left,
+#WBCR-AM .wam-cleditor .wam-cleditor__head .wam-cleditor__head-right {
+  display: inline-block;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__head .wam-cleditor__head-left {
+  text-align: left;
+  flex: 2 0 0;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__head .wam-cleditor__head-right {
+  text-align: right;
+  flex: 1 0 0;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__head .wam-cleditor__first-group-title {
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.3;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__wrap .wam-cleditor__groups {
+  padding-left: 20px;
+  border-left: 1px solid #ddd;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__groups .wam-cleditor__point {
+  background-color: #fff;
+  border: 1px solid #0073aa;
+  border-radius: 100%;
+  width: 11px;
+  height: 11px;
+  display: block;
+  position: absolute;
+  margin-left: -26px;
+  margin-top: 19px;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__groups .wam-cleditor__point:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 15px;
+  border-top: 1px solid #ddd;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__group {
+  /*@{prefix}__group + @{prefix}__group {
+        margin-top: 20px;
+       }*/
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__group .wam-cleditor__group-type {
+  display: none;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 2.3;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  color: #222;
+  background: #f3f3f3;
+  text-align: center;
+  border-radius: 3px;
+  padding: 5px 10px 5px 10px;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__empty .wam-cleditor__conditions {
+  display: none;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__condition {
+  position: relative;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__condition .wam-cleditor__hint,
+#WBCR-AM .wam-cleditor .wam-cleditor__condition .wam-cleditor__hint-content {
+  display: none;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__condition .wam-cleditor__hint {
+  position: relative;
+  display: inline-block;
+  padding: 0 6px 0 3px;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__condition .wam-cleditor__hint-icon {
+  background: url('../img/help.png') no-repeat 0 0 transparent;
+  position: relative;
+  height: 14px;
+  width: 13px;
+  display: inline-block;
+  cursor: help;
+  vertical-align: middle;
+  top: -1px;
+  opacity: 0.55;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__condition .wam-cleditor__hint:hover .wam-cleditor__hint-content {
+  display: block;
+  position: absolute;
+  width: 280px;
+  background-color: rgba(0, 0, 0, 0.8);
+  white-space: normal;
+  padding: 10px 12px 12px 12px;
+  font-weight: normal;
+  line-height: 150%;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 13px;
+  z-index: 999;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__condition .wam-cleditor__hint .wam-cleditor__hint-content,
+#WBCR-AM .wam-cleditor .wam-cleditor__condition .wam-cleditor__hint .wam-cleditor__hint-content a {
+  color: #fff;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__condition .wam-cleditor__operator-and {
+  display: block;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  border-top: 1px solid #ddd;
+  margin: 18px 0;
+  position: relative;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__condition .wam-cleditor__operator-and span {
+  position: absolute;
+  top: -10px;
+  background-color: #f9f9f9;
+  padding-right: 7px;
+  text-transform: uppercase;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__condition:first-child .wam-cleditor__operator-and {
+  display: none;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__condition > span {
+  display: inline-block;
+  vertical-align: top;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__condition .wam-cleditor__condition-actions {
+  position: absolute;
+  right: 0;
+}
+#WBCR-AM .wam-cleditor .wam-cleditor__buttons-group {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=assets-conditions.css.map */
